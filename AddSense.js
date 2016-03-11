@@ -100,7 +100,6 @@
                 
             var s = document.createElement('script');
                 s.src = this.script;
-                s.onload = callback;
             
             document.body.appendChild(s);
         },
