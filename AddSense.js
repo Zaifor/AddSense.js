@@ -90,12 +90,12 @@
                 return this.isScriptLoaded;
 
             for (var i = 0; i < document.scripts.length; i++) {
-                if(document.scripts[i].src === this.script) {
-                    return this.isScriptLoaded = true;
+                if(document.scripts[i].src === window.location.protocol+this.script) {
+                    this.isScriptLoaded = true;
                 }
             }
 
-            return false;
+            return this.isScriptLoaded;
         },
 
         load: function() {
