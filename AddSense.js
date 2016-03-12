@@ -19,6 +19,7 @@
 
     var DISPLAY     = 'block',
         UNITS       = 'px',
+        ADS_STATE   = 'google_persistent_state_async',
         CLASSNAME   = 'adsbygoogle',
         CLIENT      = 'data-ad-client',
         SLOT        = 'data-ad-slot',
@@ -68,6 +69,8 @@
             this.container.appendChild(this.html);
 
             (window.adsbygoogle = window.adsbygoogle || []).push({});
+            
+            delete(window[ADS_STATE]);
         }
     };
 
