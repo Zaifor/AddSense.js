@@ -90,7 +90,7 @@
                 return this.isScriptLoaded;
 
             for (var i = 0; i < document.scripts.length; i++) {
-                if(document.scripts[i].src = this.script) {
+                if(document.scripts[i].src === this.script) {
                     return this.isScriptLoaded = true;
                 }
             }
