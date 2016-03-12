@@ -107,6 +107,9 @@
         },
 
         unit: function(options) {
+            if(!this.loaded())
+                this.load();
+            
             return new Unit(options);
         }
     }
