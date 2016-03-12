@@ -96,8 +96,7 @@
         },
 
         load: function() {
-            //if (this.loaded()) return true;
-                
+
             var s = document.createElement('script');
                 s.src = this.script;
             
