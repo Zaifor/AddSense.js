@@ -24,7 +24,8 @@
         CLIENT      = 'data-ad-client',
         SLOT        = 'data-ad-slot',
         OVERRIDE    = 'data-override-format',
-        PAGEURL     = 'data-page-url';
+        PAGEURL     = 'data-page-url',
+        DATA_LANG   = 'data-language';
 
     /**
      * @constructor
@@ -53,7 +54,10 @@
 
                 if (options.pageUrl!==undefined)
                     html.setAttribute(PAGEURL, options.pageUrl);
-            
+
+                if (options.dataLanguage!==undefined)
+                    html.setAttribute(DATA_LANG, options.dataLanguage);
+
             return html;
         }
       
