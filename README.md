@@ -11,6 +11,7 @@ AddSense.unit({
   width : 300,
   height : 250,
   overrideFormat : "true",
-  pageUrl : "http://www.example.com"
+  pageUrl : "http://www.example.com",
+  language: "en"
 }).render();
 ```
