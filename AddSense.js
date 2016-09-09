@@ -8,7 +8,8 @@
         width : 300,
         height : 250,
         overrideFormat : "true",
-        pageUrl : "http://www.example.com"
+        pageUrl : "http://www.example.com",
+        language: "en"
     }).render();
 
  */
@@ -25,7 +26,7 @@
         SLOT        = 'data-ad-slot',
         OVERRIDE    = 'data-override-format',
         PAGEURL     = 'data-page-url',
-        DATA_LANG   = 'data-language';
+        LANGUAGE    = 'data-language';
 
     /**
      * @constructor
@@ -55,8 +56,8 @@
                 if (options.pageUrl!==undefined)
                     html.setAttribute(PAGEURL, options.pageUrl);
 
-                if (options.dataLanguage!==undefined)
-                    html.setAttribute(DATA_LANG, options.dataLanguage);
+                if (options.language!==undefined)
+                    html.setAttribute(LANGUAGE, options.language);
 
             return html;
         }
