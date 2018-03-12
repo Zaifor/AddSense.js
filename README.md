@@ -1,3 +1,4 @@
+[![Waffle.io - Columns and their card count](https://badge.waffle.io/Zaifor/AddSense.js.png?columns=all)](https://waffle.io/Zaifor/AddSense.js?utm_source=badge)
 # AddSense.js
 Async AdSense Banners via Javascript
 
